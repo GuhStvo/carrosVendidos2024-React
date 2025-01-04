@@ -1,0 +1,53 @@
+header {
+    display: flex;
+
+    background-color: #3E6261;
+    color: #D5D2BD;
+    border-radius: 10px;
+
+    margin: 0.4rem;
+    padding: 0.4rem;
+
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;        
+    text-transform: uppercase;
+}
+
+ul>li, a {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.menuLateral {
+    display: none;
+}
+
+.menuLateral> ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuLateral.menuAberto {
+    background-color: #3E6261;
+    color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: fit-content;
+
+    position: absolute;
+    right: 0;
+    margin: 15px;
+
+    border-radius: 7px;
+}

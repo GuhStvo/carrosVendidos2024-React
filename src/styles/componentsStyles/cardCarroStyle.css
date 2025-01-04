@@ -1,0 +1,70 @@
+.cardCarro {
+    margin: 0.4rem;
+    padding: 0.4rem;
+    background-color: #D5D2BD;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+}
+
+.cardCarro .texto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3 {
+    color: #3c3c3c
+}
+
+.cardCarro .texto>div:nth-child(1) {
+    h2 {
+        color: #000;
+    }
+}
+.cardCarro .texto>div:nth-child(2) {
+    h3 {
+        text-align: center;
+    }
+}
+
+.imgCardCarro {
+    width: 100%;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 700px) {
+    .cardCarro {
+        flex-direction: row;
+    }
+
+    .cardInvertido {
+        flex-direction: row-reverse;
+        text-align: end;
+    }
+
+    .cardCarro .texto {
+        width: 100%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imgCardCarro {
+        max-width: 400px;
+        height: 100%;
+        object-fit: cover;
+        align-self: center;
+        border-radius: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    
+}
