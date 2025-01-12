@@ -18,6 +18,10 @@ ul {
     text-transform: uppercase;
 }
 
+.imgLogo {
+    filter: grayscale(1);
+}
+
 ul>li, a {
     list-style: none;
     display: flex;

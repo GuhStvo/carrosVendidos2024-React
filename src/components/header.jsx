@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useRef } from "react";
 import { AlignJustify } from "lucide-react";
+import { motion } from "motion/react";
 
 export default function ComponenteTeste() {
   const [menuAberto, SetMenuAberto] = useState(false);
@@ -13,18 +14,31 @@ export default function ComponenteTeste() {
 
   return (
     <>
-      <header>
+      <motion.header
+        initial={{ opacity: 0, y: "-120%" }}
+        animate={{ opacity: 1, y: "0" }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
         <ul>
-          <li>
+          <motion.li
+            initial={{ opacity: 0, y: "-120%" }}
+            animate={{ opacity: 1, y: "0" }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
             <Link href={"/"}>
-              <Image src={"/assets/carLogo.webp"} width={60} height={60} />
+              <Image
+                className="imgLogo"
+                src={"/assets/carLogo.png"}
+                width={60}
+                height={60}
+              />
             </Link>
-          </li>
+          </motion.li>
           <li>
             <AlignJustify />
           </li>
         </ul>
-      </header>
+      </motion.header>
 
       <div className={`menuLateral ${menuAberto ? "menuAberto" : ""}`}>
         <ul>
