@@ -1,4 +1,3 @@
-import cardCarroStyle from "@/styles/componentsStyles/cardCarroStyle.css";
 import Image from "next/image";
 
 export default function CardCarro(props) {

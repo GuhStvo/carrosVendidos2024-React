@@ -1,4 +1,3 @@
-import ComponenteTesteStyle from "@/styles/componentsStyles/componenteTesteStyle.css";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useRef } from "react";

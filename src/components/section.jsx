@@ -1,4 +1,3 @@
-import firstSectionStyle from "@/styles/componentsStyles/firstSectionStyle.css";
 import Image from "next/image";
 
 export default function Section() {
