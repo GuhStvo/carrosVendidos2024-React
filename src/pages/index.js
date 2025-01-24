@@ -1,7 +1,7 @@
 import ComponenteTeste from "@/components/header";
 import Section from "@/components/section";
 import CardCarro from "@/components/cardCarro";
-import Seta from "@/components/seta"
+import Seta from "@/components/seta";
 import { motion, useScroll, useSpring } from "motion/react";
 
 export default function Home() {
@@ -43,6 +43,60 @@ export default function Home() {
           nomeCarro={"Volkswagen Polo"}
           uniVendidas={"139.727"}
           nomeArquivo={"volswagenPolo.webp"}
+        />
+        <CardCarro
+          numLista={3}
+          nomeCarro={"Chevrolet Onix"}
+          uniVendidas={"68.653"}
+          nomeArquivo={"chevroletOnix.webp"}
+        />
+        <CardCarro
+          invertido={true}
+          numLista={4}
+          nomeCarro={"Fiat Argo"}
+          uniVendidas={"64.473"}
+          nomeArquivo={"fiatArgo.webp"}
+        />
+        <CardCarro
+          numLista={5}
+          nomeCarro={"Hyundai HB20"}
+          uniVendidas={"63.991"}
+          nomeArquivo={"hyundaiHB20.jpg"}
+        />
+        <CardCarro
+          invertido={true}
+          numLista={6}
+          nomeCarro={"Volkswagen T-Cross"}
+          uniVendidas={"55.362"}
+          nomeArquivo={"volswagenTcross.jpg"}
+        />
+        <CardCarro
+          invertido={false}
+          numLista={7}
+          nomeCarro={"Fiat Mobi"}
+          uniVendidas={"49.672"}
+          nomeArquivo={"fiatMobi.jpg"}
+        />
+        <CardCarro
+          invertido={true}
+          numLista={8}
+          nomeCarro={"Hyundai Creta"}
+          uniVendidas={"48.937"}
+          nomeArquivo={"hyundaiCreta.jpeg"}
+        />
+        <CardCarro
+          invertido={false}
+          numLista={9}
+          nomeCarro={"Chevrolet Tracker"}
+          uniVendidas={"47.849"}
+          nomeArquivo={"chevroletTracker.webp"}
+        />
+        <CardCarro
+          invertido={true}
+          numLista={10}
+          nomeCarro={"Nissan Kicks"}
+          uniVendidas={"45.143"}
+          nomeArquivo={"nissanKicks.jpg"}
         />
       </div>
     </>
